@@ -29,6 +29,10 @@ class atom:
         return norm(np.array([self.x,self.y,self.z]) - np.array([atom.x,atom.y,atom.z]))
         pass
     def get_closest(self,atoms,criterion=0.5):
+        '''
+        First step: Finding the closest atom for each water molercules
+        Second setp:Calc the distance between them>> if distance shoter than "criterion" this water will be marked.
+        '''
         def check_atom(closest_atom_info,current_atom):
             total_length = abs(current_atom.x-self.x) + abs(current_atom.y - self.y) + abs(current_atom.z - self.z)
             if total_length < closest_atom_info[-1]:
