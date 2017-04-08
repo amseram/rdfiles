@@ -2,7 +2,7 @@
 """
 Created on Fri Apr 07 01:20:29 2017
 
-@author: amsera
+@author: amseram
 """
 
 from biopandas.pdb import PandasPDB as pdb
