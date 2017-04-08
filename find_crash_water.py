@@ -8,7 +8,7 @@ Created on Fri Apr 07 01:20:29 2017
 from biopandas.pdb import PandasPDB as pdb
 import sys,os,numpy as np
 from numpy.linalg import norm 
-from multiprocessing.dummy import Pool
+'''from multiprocessing.dummy import Pool'''
 
 class atom:
     def __init__(self,atom_info):
