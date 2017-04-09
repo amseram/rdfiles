@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Fri Apr 07 01:20:29 2017
-
+Find the water crashed with protein in pdb.
 @author: amseram
 """
 from biopandas.pdb import PandasPDB as pdb
