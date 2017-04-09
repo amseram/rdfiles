@@ -4,7 +4,6 @@ Created on Fri Apr 07 01:20:29 2017
 
 @author: amseram
 """
-
 from biopandas.pdb import PandasPDB as pdb
 import sys,os,numpy as np
 from numpy.linalg import norm 
@@ -46,8 +45,7 @@ class atom:
             self.check_crash = True
             pass
         pass
-    pass
-    
+    pass 
 
 class atoms:
     def __init__(self):
@@ -73,7 +71,6 @@ class crash_water:
         return "\n".join(lines)
         pass
     pass
-
 
 def read_from_pdb(pdb_name):
     pdb_object = pdb().read_pdb(pdb_name)
