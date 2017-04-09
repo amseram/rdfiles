@@ -22,7 +22,7 @@ class atom:
         self.closest_atom = ""
         pass
     def __str__(self):
-        return "%s : %s | %s : %s |"%(tuple(self.atom_element,self.atom_number,self.residue_name,self.residue_number))
+        return "%s : %s | %s : %s |"%(tuple([self.atom_element,self.atom_number,self.residue_name,self.residue_number]))
         pass
     def get_distance(self,atom):
         return norm(np.array([self.x,self.y,self.z]) - np.array([atom.x,atom.y,atom.z]))
