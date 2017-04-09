@@ -120,7 +120,7 @@ if __name__=='__main__':
             pass
         return pdb_name
     if len(sys.argv) > 1:
-        pdb_name = sys.argv[-1]
+        pdb_name = sys.argv[1]
         if len(sys.argv) > 2 :
             criterion = float(sys.argv[-1])
             pass
